@@ -1,0 +1,36 @@
+service: video-transcription-skill
+
+provider:
+    name: google
+    stage: dev
+    runtime: nodejs16
+    region: us-central1 	
+    memorySize: 512
+    timeout: 540s
+    project: video-transcription-skill
+    credentials: .gcloud/serverless.json
+    environment:
+        box_primary_key: "INSERT BOX PRIMARY KEY HERE"
+        box_secondary_key: "INSERT BOX SECONDARY KEY HERE"
+        box_api_endpoint: "https://api.box.com/2.0"
+        ibm_stt_watson_key: "INSERT IBM WATSON KEY HERE"
+        ibm_stt_watson_url: "INSERT IBM WATSON URL HERE"
+        keyword_dictionary: "INSERT COMMA DELIMITED LIST OF KEYWORDS HERE EX. Financial, Advice, Promise"
+        skill_accepted_formats: 'aac,aif,aifc,aiff,amr,au,flac,m4a,mp3,ra,wav,wma'
+        skill_file_size_limit: '100'
+
+plugins:
+    - serverless-google-cloudfunctions
+
+package:
+    exclude:
+        - node_modules/**
+        - .gitignore
+        - .git/**
+
+functions:
+    first:
+        handler: boxSkill
+        events:
+            - http: path
+

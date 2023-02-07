@@ -1,0 +1,21 @@
+{
+    "name": "video-transcription-skill",
+    "version": "0.1.0",
+    "description": "This skill will transcribe a video and return keywords.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Alex Novotny",
+    "license": "Apache 2.0",
+    "dependencies": {
+        "box-node-sdk": "^2.7.2",
+        "got": "^12.5.3",
+        "ibm-watson": "^7.1.2",
+        "jimp": "^0.16.2",
+        "serverless": "^3.24.1"
+    },
+    "devDependencies": {
+        "serverless-google-cloudfunctions": "^4.6.0"
+    }
+}
