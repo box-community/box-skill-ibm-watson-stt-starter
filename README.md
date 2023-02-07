@@ -19,4 +19,4 @@ This repository contains an example GCP function that accepts a Box Skill invoca
 
 Now, if you upload an audio file under 100MB, you should see a transcript and keyword information attached via a skills card, as well as logs under the logs tab in the function.
 
-Note - This service uses the [synchronous method](https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-http#HTTP-basic) provided by IBM. This method is restricted to audio 100mb and under. If you wish to use larger audio files, check out their [asynchronus](https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-async) job model instead. 
+Note - This service uses the [synchronous method](https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-http#HTTP-basic) provided by IBM. This method is restricted to audio 100mb and under. If you wish to use larger audio files, check out their [asynchronous](https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-async) job model instead. 
