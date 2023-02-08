@@ -3,6 +3,8 @@ This repository contains an example GCP function that accepts a Box Skill invoca
 
 **Note: You will need to add a gcp crendentials file and update the serverless.yml with that appropriate connection information.**
 
+If you would rather, you can follow along on the [Medium blog](https://medium.com/box-developer-blog/box-skills-ibm-watson-speech-to-text-tutorial-b7e3b3c0a8c7) for more in depth setup instructions.
+
 ## Steps to Setup and Deploy
 
 0. You will need to set up a Box Skill in the Box Developer Console, as well as authorize the skill and configure a folder to watch for uploads. You can find out more about that process in our [developer documentation](https://developer.box.com/guides/applications/custom-skills/setup/). 
